@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    WARNING! Make sure that you match all Quasar related
+    tags to the same version! (Below it's "@2.10.1")
+  -->
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/quasar@2.10.1/dist/quasar.prod.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+
+  <body>
+    <!-- example of injection point where you write your app template -->
+    <div id="q-app">
+        <h1>TodoList</h1>
+        <q-btn outline color="primary" label="Outline"></q-btn>
+        <q-btn round color="secondary" icon="navigation"></q-btn>
+    </div>
+
+    <!-- Add the following at the end of your body tag -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quasar@2.10.1/dist/quasar.umd.prod.js"></script>
+    
+    <script src="./main.js"></script>
+    <script>
+      /*
+        Example kicking off the UI. Obviously, adapt this to your specific needs.
+        Assumes you have a <div id="q-app"></div> in your <body> above
+       */
+      
+      const quaserApp = app.use(Quasar)
+      const mountedApp = app.mount('#q-app')
+    </script>
+  </body>
+</html>
